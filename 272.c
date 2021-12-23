@@ -13,17 +13,17 @@ void xuat(int a[],int n){
         printf("a[%d]: %d \t", i, a[i]); 
     }
 }
-void delete_X(int A[], int *n, int x)
+void delete_X(int a[], int *n, int x)
 {
     int i, j;
     
     for(i = *n-1; i >= 0; i--)
     {
-        if(A[i] == x)
+        if(a[i] == x)
         { 
             for(j = i; j < *n-1; j++)
             {
-                A[j] = A[j+1];
+                a[j] = a[j+1]; //xóa phần tử a[i]
             }
             (*n)--;
             

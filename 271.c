@@ -16,8 +16,8 @@ void xuat(int a[],int n){
  
 void xoa_ptu(int a[], int *n, int pos) {
    int i;
-   for( i=pos+1;i<*n;i++){
-       a[i-1]=a[i];
+   for( i=pos;i<*n-1;i++){
+       a[i]=a[i+1];
    }
 
    *n = *n-1;
