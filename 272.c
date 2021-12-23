@@ -13,7 +13,7 @@ void xuat(int a[],int n){
         printf("a[%d]: %d \t", i, a[i]); 
     }
 }
-void delete_Max(int A[], int *n, int x)
+void delete_X(int A[], int *n, int x)
 {
     int i, j;
     
@@ -44,7 +44,7 @@ int main() {
         if(max<a[i]) max = a[i];
     }
 
-    delete_Max(a,&n,max);
+    delete_X(a,&n,max);
     
 
     xuat(a,n);
