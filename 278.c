@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int b[10000]={0}; int c[100];
+int b[10000]={0}; 
 
 void nhap(int a[], int n){
     int i;
@@ -21,9 +21,7 @@ void xoa_trung(int a[],int n){
     int i;
 
     for(i=0;i<n;i++){
-        if(b[a[i]]>=1){
-           c[a[i]]=a[i];
-        }
+       
     }
     
     
