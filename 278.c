@@ -17,16 +17,24 @@ void xuat(int a[],int n){
     }
 }
 
-void xoa_trung(int a[],int n){
-    int i;
+void xoa_trung(int a[],int *n){
+    int i,j,t;
 
-    for(i=0;i<n;i++){
-       
+    for(i = 0;i<*n;i++){
+            for(j = i+1;j < *n;j++){
+                if(a[i]==a[j]){
+                    for(t=j ; t <*n-1;t++){
+                        a[t]=a[t+1];
+                    }
+                     (*n)--;
+                }
+            }
+           
     }
-    
-    
 
 }
+
+
 
 int main(){
     int a[100]; int n;
@@ -34,7 +42,9 @@ int main(){
     
     nhap(a,n);
 
-    xoa_trung(a,n);
+    xoa_trung(a,&n);
+
+    xuat(a,n);
 
    
 
