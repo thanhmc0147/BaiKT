@@ -53,7 +53,7 @@ if(checkNT(a[i])==true)
 {
 for (j=i+1;j<n;j++)
 {
-    if (checkNT(a[j]) == true && a[i] > a[j]){
+    if (checkNT(a[i])==true && checkNT(a[j]) == true && a[i] > a[j]){
         nn=a[i];
         a[i]=a[j];
         a[j]=nn;
