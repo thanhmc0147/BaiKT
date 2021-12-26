@@ -47,7 +47,7 @@ void sapxep(int a[],long long n)
 { 
 int nn;
     int i,j;
-    for (i=0;i<n-1;i++)
+    for (i=0;i<=n;i++)
     {
 if(checkNT(a[i])==true)
 {
