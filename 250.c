@@ -6,7 +6,7 @@ void nhap(int a[], int n){
     for(i=1;i<=n;i++){
         printf("Phan tu a[%d]: ",i); scanf("%d",&a[i]);
        
-    }
+    }//
 }
 
 void xuat(int a[],int n){
