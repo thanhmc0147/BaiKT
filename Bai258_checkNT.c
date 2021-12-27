@@ -3,7 +3,7 @@
 void nhap(int a[],int n)
 {
 int i;
-for ( i=0;i<=n;i++){
+for ( i=1;i<=n;i++){
 printf("So a[%d] = ",i);
 scanf("%d",&a[i]);
 }
@@ -51,7 +51,7 @@ int nn;
     {
 if(checkNT(a[i])==true)
 {
-for (j=i+1;j<n;j++)
+for (j=i;j<=n;j++)
 {
     if (checkNT(a[i])==true && checkNT(a[j]) == true && a[i] > a[j]){
         nn=a[i];
@@ -67,14 +67,15 @@ int main()
 {
     int a[1000];
     long long n,i;
-do{
-printf("nhap so n: ");
-scanf("%d",&n);
-}while (n<0);
-nhap(a,n);
-printf("Mang duoc nhap la : ");
-xuat(a,n);
-sapxep(a,n);
-printf("\n SX: ");
-xuat(a,n);
+    do{
+        printf("nhap so n: ");
+        scanf("%d",&n);
+    }while (n<0);
+    
+    nhap(a,n);
+    printf("Mang duoc nhap la : ");
+    xuat(a,n);
+    sapxep(a,n);
+    printf("\n SX: ");
+    xuat(a,n);
 }

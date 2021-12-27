@@ -1,12 +1,10 @@
 #include<stdio.h>
 
-int b[10000]={0}; 
-
 void nhap(int a[], int n){
     int i;
     for(i=0;i<n;i++){
         printf("Phan tu a[%d]: ",i); scanf("%d",&a[i]);
-        b[a[i]]++;
+       
     }
 }
 
