@@ -70,7 +70,7 @@ int main()
     do{
         printf("nhap so n: ");
         scanf("%d",&n);
-    }while (n<0);
+    }while (n<=0);
     
     nhap(a,n);
     printf("Mang duoc nhap la : ");
