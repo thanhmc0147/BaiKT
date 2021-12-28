@@ -11,7 +11,7 @@ scanf("%d",&a[i]);
 void xuat(int a[],int n)
 {
     int i;
-    for (i=0;i<=n;i++){
+    for (i=1;i<=n;i++){
         printf("%4d ",a[i]);
     }
 }
@@ -47,7 +47,7 @@ void sapxep(int a[],long long n)
 { 
 int nn;
     int i,j;
-    for (i=0;i<=n;i++)
+    for (i=1;i<=n;i++)
     {
 if(checkNT(a[i])==true)
 {
@@ -70,7 +70,7 @@ int main()
     do{
         printf("nhap so n: ");
         scanf("%d",&n);
-    }while (n<0);
+    }while (n<=0);
     
     nhap(a,n);
     printf("Mang duoc nhap la : ");

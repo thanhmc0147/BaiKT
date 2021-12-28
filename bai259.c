@@ -17,7 +17,7 @@ void xuat(int a[],int n)
 }
 bool checkSHT(int n){
     int sum = 0,i;
-    for(i=1;i<n;i++)
+    for(i=1;i<=n/2;i++)
     {
         if(n%i==0) sum += i;
     }
@@ -30,10 +30,9 @@ void sapxep(int a[],int n)
     int i,j;
     for (i=1;i<=n;i++)
     {
-        if(checkSHT(a[i])==true)
-        {
+     
             for (j=i+1;j<n;j++){
-                if (checkSHT(a[j]) == true && a[i] > a[j]){
+                if (checkSHT(a[i] == true && checkSHT(a[j]) == true && a[i] > a[j]){
                     nn=a[i];
                     a[i]=a[j];
                     a[j]=nn;
@@ -42,7 +41,7 @@ void sapxep(int a[],int n)
         }
 
     }
-}
+
 
 int main()
 {
