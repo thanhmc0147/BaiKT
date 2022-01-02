@@ -17,7 +17,7 @@ void xuat(int a[],int n){
 void List_All_MangCon(int a[],int n){
  
    for(int i=0;i<n;i++){
-       for(int length = 1; length<=n; length++){
+       for(int length = 1+i; length<=n; length++){
             for(int j=i; j<length; j++){
                     printf("%4d",a[j]);
             }

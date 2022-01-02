@@ -8,7 +8,7 @@ bool kt_tang(int a[], int n){
             return false;
             break;
         }
-    }//
+    }
     return true;
 }
 
