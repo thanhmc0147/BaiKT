@@ -38,7 +38,7 @@ void List_MangCon_Duong(int a[],int n){
            length_b = 0;
             for(int j = i; j < length; j++)
             {
-                b[length_b] = a[j];
+                b[length_b] = a[j]; //gán mảng b các giá trị con dương
                 length_b++;
             }
             if(kt_duong(b,length_b)==1){
